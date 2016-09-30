@@ -1,18 +1,26 @@
 from database import db_session, init_db
-from models import Book
-from flask import Flask, request
+from models import Book, BookJSONEnconder
+from flask import Flask, request, jsonify
+from flask_cors import CORS, cross_origin
 
 init_db()
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'the quick brown fox jumps over the lazy dog'
+app.config['CORS_HEADERS'] = 'Content-Type'
+
+cors = CORS(app, resources={r"/books": {"origins": "localhost"}})
+
+app.json_encoder = BookJSONEnconder
 
 @app.route('/')
 def hello_world():
     return 'Hello, World!'
 
-@app.route('/books/')
+@app.route('/books')
+@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
 def list_books():
-    return str(Book.query.all())
+    return jsonify(Book.query.all())
 
 @app.route('/books/add', methods=['POST', 'GET'])
 def add_book():

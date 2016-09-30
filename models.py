@@ -1,5 +1,6 @@
 from sqlalchemy import Column, Integer, String
 from database import Base
+from json import JSONEncoder
 
 class Book(Base):
     __tablename__ = 'books'
@@ -17,3 +18,14 @@ class Book(Base):
 
     def __repr__(self):
         return 'Title: %r' % (self.title)
+
+class BookJSONEnconder(JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, Book):
+            return {
+                'title' : obj.title,
+                'author' : obj.author,
+                'isbn' : obj.isbn,
+                'status' : obj.status
+            }
+        return super(BookJSONEnconder, self).default(obj)

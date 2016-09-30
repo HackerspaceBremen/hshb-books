@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Bücherliste</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //$("selector").hide();
+                $('#booktable').DataTable( {
+                    ajax: {
+                        url: 'http://127.0.0.1:5000/books',
+                        dataSrc: ''
+                    },
+                    columns: [
+                        { data: 'title' },
+                        { data: 'author' },
+                        { data: 'isbn' },
+                        { data: 'status' }
+                        ]
+                } );
+            });
+        </script>
+    </head>
+    <body>
+        <table id="booktable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+        </table>
+    </body>
+</html>
