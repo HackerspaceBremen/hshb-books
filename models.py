@@ -23,6 +23,7 @@ class BookJSONEnconder(JSONEncoder):
     def default(self, obj):
         if isinstance(obj, Book):
             return {
+                'DT_RowId' : obj.id,
                 'title' : obj.title,
                 'author' : obj.author,
                 'isbn' : obj.isbn,

@@ -22,6 +22,18 @@ def hello_world():
 def list_books():
     return jsonify(Book.query.all())
 
+@app.route('/books/edit', methods=['POST'])
+@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
+def edit_book():
+    print request.form
+    try:
+        BookToEdit = Book.query.filter(Book.id == request.form['DT_RowId']).first()
+        BookToEdit.status = request.form['status']
+        db_session.commit()
+    except:
+        return abort(500)
+    return "ok"
+
 @app.route('/books/add', methods=['POST', 'GET'])
 def add_book():
     if request.method == 'POST':
