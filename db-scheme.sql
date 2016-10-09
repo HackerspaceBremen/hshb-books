@@ -1,0 +1,11 @@
+BEGIN TRANSACTION;
+CREATE TABLE books (
+	id INTEGER NOT NULL, 
+	title VARCHAR(120), 
+	author VARCHAR(120), 
+	isbn VARCHAR(20), 
+	status VARCHAR(120), 
+	PRIMARY KEY (id), 
+	UNIQUE (title)
+);
+COMMIT;

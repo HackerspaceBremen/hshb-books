@@ -1,0 +1,134 @@
+|21st Century C |Ben Klemens |978-1-491-90389-6 |Liegt im Space |
+|300 Oszillatoren|Rudolf Graf|3-89576-053-6|Liegt im Space|
+|301 Schaltungen|Elektor Verlag|3-921608-28-7|Liegt im Space|
+|304 Schaltungen|Elektor Verlag|3-928051-07-5|Liegt im Space|
+|305 Schaltungen|Elektor Verlag|3-928051-67-9|Liegt im Space|
+|306 Schaltungen|Elektor Verlag|3-89576-022-6|Liegt im Space|
+|Aktive Mischer in der Amateurfunkpraxis|Frank Sichla |3-910159-15-X|Liegt im Space|
+|Analog - Science Fact Reader |Ben Bova |- |Liegt im Space |
+|Android 4.4 |Arno Becker & Marcus Pant |978-3-89864-809-7 |Liegt im Space |
+|Arduino 8-bit Sound Generation|David Cuartielles|- |Liegt im Space|
+|Arduino für Einsteiger |Massimo Banzi |978-3-86899-232-8 |Liegt 1x im Space |
+|Arduino Kochbuch |Michael Margolis |978-3-86899-353-0 |Zur Rezension bei Lars |
+|Arduino – Schaltungsprojekte für Profis|Günter Spanner|978-3-89576-257-4|Liegt im Space|
+|Assembler-Programmiersprache System SAB 8080 |Siemens Aktiengesellschaft |- |Liegt im Space |
+|Atmospheric Monitoring with Arduino |Patrick Di Justo & Emily Gertz |978-1-449-33814-5 |Liegt im Space |
+|Atomstrahlen Geigerzähler - Wesen und Anwendung radioaktiver Strahlen |Heinz Richter |- |Liegt im Space |
+|AVR – Mikrocontroller Lehrbuch|Roland Walter|978-3-9811894-4-5|Liegt im Space|
+|Bash kurz & gut |Karsten Günther |978-3-95561-764-6 |Liegt im Space |
+|Basiskurs Bascom-AVR|Burkhard Kainka|978-3-89576-238-3|Liegt im Space|
+|Beagle Bone für Einsteiger |Matt Richardson |978-1-95561-409-6 |Liegt im Space |
+|Bitcoin kurz & gut |Joerg Platzer |978-3-95561-650-2 |Liegt im Space |
+|Blockchain |Melanie Swan |978-1-491-92049-7 |hat trailblazr |
+|Build Awesome Command-Line Applications in Ruby 2 |David Bryant Copeland |978-1-937785-75-8 |Liegt im Space |
+|C – Programmieren von Anfang an|Helmut Erlenkötter|3-499-60074-9|Liegt im Space|
+|Continuous Delivery|Eberhard Wolff|978-3-86490-208-6|Bei Steve zur Rezension|
+|Daemon |Daniel Suarez |- |Liegt im Space |
+|Das Blender-Buch |Carsten Wartmann |978-3-86490-051-8 |Liegt im Space |
+|Das Buch zu Raspberry Pi mit Linux |Stefan Pietraszak |978-3-95561-698-4 |Liegt im Space |
+|Das Eagle PCB-Designer Handbuch|Herbert Bernstein |3-7723-4136-5|Liegt im Space|
+|Das Galaktische Imperium |Isaac Asimov |- |Liegt im Space |
+|Das große Amateurfunk-Lexikon|Frank Sichla |978-3-88180-372-6|Liegt im Space|
+|Das große Bastelbuch der Elektronik |Heinrich Stöckle |- |Liegt im Space |
+|Das große PIC-Micro Handbuch|Anne & Manfred König|978-3-7723-4265-3|Liegt im Space|
+|Das intelligente Haus - Heimautomation mit Arduino, Android und PC |Mike Riley |978-3-86899-363-9 |Unbekannt |
+|Das neue Werkbuch Elektronik |Rüdiger Klein |978-3-645-65094-3 |Liegt im Space (Leihgabe von Tobi?) |
+|Das Sensor-Buch |Kimmo Karvinen & Tero Karvinen |978-3-95561-902-2 |Liegt im Space |
+|Der Antennenbaukasten|Günther Grünbeck|978-3-88180-394-7|Liegt im Space|
+|Die Computerwerkstatt |Klaus Dembowski |978-3-86490-251-2 |Reserviert für Philip zur Rezension |
+|Die elektronische Welt mit **Arduino** entdecken  |Erik Bartmann |978-3-95561-115-6 |Hat Lars |
+|Die elektronische Welt mit **Raspberry Pi** entdecken  |Erik Bartmann |978-3-95561-109-5 |Liegt im Space |
+|Die TeXnische Komödie |Dante e.V. |- |Verschiedene Ausgaben von 2008 bis 2012 liegen im Space |
+|Die unerträgliche Leichtigkeit des Seins |Milan Kundra |- |Liegt im Space |
+|Distributed Network Data |Alasdair Allan & Kipp Bradford |978-1-449-36026-9 |Liegt im Space |
+|DRM Empfangspraxis – Digitaler Rundfunk unter 30 MHz|Burkhard Kainka & Ulf Schneider|978-3-7723-4008-3|Liegt im Space|
+|Effektives modernes C++ |Scott Meyers |978-3-95875-049-4 |Reserviert für Kannan |
+|Einführung in Apache Solr |Markus Klose & Daniel Wrigley |978-3-95561-421-8 |Liegt im Space |
+|Einführung in die Elektronik |Jean Pütz |3-596-26273-9 |Unbekannt |
+|Elektronik als Hobby - Von der Grundschaltung zum integrierten Schaltkreis |Willi Priesterath |3-8068-4293-0 |Liegt im Space |
+|Elektronik in Selbstbau und Versuch - Praxis der Elektronik Teil 1 |Heinz Richter |- |Liegt im Space |
+|Elektronik-Selbstbau-Praktikum |Siegfried Wirsum |3-7723-5425-4 |Liegt im Space |
+|Exploring Everyday Things with R and Ruby |Sau Sheong Chang |978-1-449-31515-3 |Liegt im Space |
+|Freie Software - Zwischen Privat- und Gemeineigentum |Volker Grassmuck |978-3-89331-569-7 |Liegt im Space |
+|Funk-Bauanleitungen für Funkamateure und Hobbyelektroniker|Martin Michaelis|3-88180-330-0|Liegt im Space|
+|Getting Started with BeagleBone |Matt Richardson |978-1-449-34537-2 |Liegt 2x im Space |
+|Getting Started with Raspberry Pi - 2nd Edition |Matt Richardson & Shawn Wallace |978-1-457-18612-7 |Liegt im Space |
+|Google App Engine 2nd Edition |Dan Sanderson |978-1-449-39826-2 |Liegt im Space |
+|Ha3k3ln + Str1ck3n für Geeks - Wissenswertes, Ideen & Inspiration |Verena Kuni |978-3-86899-356-1 |Liegt im Space |
+|Hacks für Raspberry Pi - Werkzeuge, Lösungen und Code für den Raspberry Pi |Ruth Suehle und Tom Callaway |978-3-95561-632-8 |1x Ausgeliehen von Klaus oder Jörn, 1 x im Space |
+|Halbleiter-Schaltungstechnik |Tietze&Schenk |978-3-642-01621-9 |Liegt im Space (Herkunft unbekannt) |
+|HF-Messungen für den Funkamateur Teil 1|Hans Nussbaum|978-3-88180-804-3|Liegt im Space|
+|HF-Messungen für den Funkamateur Teil 2|Hans Nussbaum|978-3-88180-815-6|Liegt im Space|
+|HF-Messungen für den Funkamateur Teil 3|Hans Nussbaum|978-3-88180-824-8|Liegt im Space|
+|Hören mit Röhren|Friedrich Hunold|978-3-790-50932-8|Liegt im Space|
+|Internet-MEME |Nils Dagsson Moskopp & Christian Heller |978-3-86899-805-4 |Liegt im Space |
+|iOS 7 Programming Fundamentals |Matt Neuburg |978-1-4919-4557-5 |Liegt im Space |
+|Java 8 Lambdas - Functional Programming for the masses |Richard Warburton |978-1-449-37077-0 |Liegt im Space |
+|JavaScript & jQuery - the missing manual |David Sawyer McFarland |978-1-491-94707-4 |Liegt im Space |
+|Jogis Röhrenbude|Joachim Gittel|978-3-7723-4018-0|Liegt im Space|
+|Joomla! 2.5 - Praxiswissen |Tim Schürmann |978-3-86899-107-9 |Liegt im Space |
+|Kernenergie - Fragen und Antworten |Jürgen Seidel |3-430-18279-4 |Liegt im Space |
+|Kids programmieren 3D-Spiele mit JavaScript |Chris Strom |978-3-95561-496-6 |Liegt im Space |
+|Kuckucksei|Clifford Stoll |3-596-10277-4|Liegt im Space |
+|Künstliche Wesen – Verhalten kybernetischer Vehikel|Valentin Braitenberg|3-528-08949-0|Liegt im Space|
+|Learning Android - Develop mobile apps using Java and Eclipse |Marko Gargenta & Mausmi Nakamura |978-1-449-31923-6 |Liegt im Space |
+|Linux 2013 |Michael Kofler |978-3-8273-3208-0 |Liegt im Space (Leihgabe von Olri) |
+|Linux im Netz |Dr. Bernhard Röhrig |3-932311-07-8 |Liegt im Space |
+|LPIC-1 / LPIC-2 - Sicher zur erfolgreichen Linux-Zertifizierung|Harald Maaßen|9783836217866|Liegt im Space |
+|Make: 3D Printing |Anna Kaziunas France |978-1-457-18293-8 |Liegt im Space |
+|Make: Rockets |Mike Westerfield |978-1-457-18292-1 |Liegt im Space |
+|Make: Ultimate Guide to 3D Printing |makezine.com |- |Liegt im Space |
+|Maschinenelemente |Roloff/Matek |3-528-64028-6 |Liegt im Space |
+|Mathamatica |Stephen Wolfram|978-0-201-51502-84|Liegt im Space |
+|Mikrocontroller für Einsteiger|Michael Hofmann|978-3-7723-4318-6|Liegt im Space|
+|Mikrocontroller programmieren mit Bascom Basic|Ulli Sommer|978-3-645-65041-0|Liegt im Space|
+|Mit dem PIC-Controller erfolgreich arbeiten |Dr. Anne König & Manfred König |3-8272-5168-0 |Liegt im Space |
+|Mit neuer Energie in die Zukunft - Erneuerbare Energien & Alternative Kraftstoffe |Sven Geitmann |3-8334-1347-6 |Liegt im Space |
+|Mobile Developer's Guide to the Galaxy 7th edition |enough software |- |Liegt im Space |
+|Mobile Developer's Guide to the Galaxy 13th edition |enough software |- |2x; Liegen im Space |
+|Mobile Developer's Guide to the Galaxy 15th edition |enough software |- |Liegt im Space |
+|Mobile Roboter – Von der Idee zur Implementierung|Joseph L. Jones & Anita M. Flynn|3-89319-855-5|Liegt im Space|
+|Murphys Computergesetze|Joachim Graf|3-8272-6205-4 |Liegt im Space |
+|NFC mit Android & Arduino |Tom Igoe, Don Coleman & Brian Jepson |978-3-95561-842-1 |Liegt im Space |
+|Oracle PL/SQL |Steven Feuerstein, Bill Pribyl, Chip Dawes |3-89721-217-X|Liegt im Space |
+|Packet Radio|Wolf-Dieter Roth|978-3-88180-366-1|Liegt im Space|
+|PC-Elektroniklabor |Herbert Bernstein |978-3-7723-5315-4 |Liegt im Space (Leihgabe von Tobi?) |
+|PC Intern Systemprogrammierung|Michael Tischler |3-89011-235-8 |Liegt im Space |
+|Perl Kochbuch |Tom Christiansen & Nathan Torkington |3-89721-366-4 |Liegt im Space (JABokemeyer?) |
+|PIC-Mikrocontroller – 50 Projekte für Anfänger und Fortgeschrittene|Bert van Dam|978-3-98576-201-7|Liegt im Space|
+|PostScript Language - Reference Manual |Adobe Systems Incorporated |0-201-10174-2 |Liegt im Space |
+|PostScript Language - Tutorial and Cookbook |Adobe Systems Incorporated |0-201-10179-3 |Liegt im Space |
+|Praktische Elektronik für jeden Beruf - Praxis der Elektronik Teil 2 |Heinz Richter |- |Liegt im Space |
+|Processing |Erik Bartmann |978-3-89721-997-7 |Liegt im Space |
+|Programmieren fürs IPhone |Markus Stäuble |978-3-89864-635-2 |Liegt im Space (Herkunft unbekannt) |
+|Programmieren in C (Franzis)|Andreas Ganzer |978-3-7723-7350-3 |Liegt im Space (Leihgabe von Tobi?) |
+|Programmieren in C (Hanser)|Kernighan & Ritchie|3-446-13878-1|Liegt im Space|
+|Programmieren von PIC-Mikrocontrollern|Dieter Kohtz|978-3-7723-5127-3|Liegt im Space|
+|Programmiertechniken für AVR-Mikrocontroller|Manfred Schwabl-Schmidt|978-3-89576-176-8|Liegt im Space|
+|PSK31 & Co. - Modernes Funkfernschreiben – leicht verständlich|Frank Sichla |978-3-88180-374-2|Liegt im Space|
+|Python kurz & gut |Mark Lutz |978-3-95561-770-7 |hat trailblazr |
+|Radio-Baubuch – Vom Detektor- zum DRM-Empfänger|Burkhard Kainka|978-3-89576-160-7|Liegt im Space|
+|Radiotechnik für alle |Heinz Richter |- |Liegt im Space |
+|Raspberry Pi für Einsteiger |Matt Richardson & Shawn Wallace |978-3-95561-147-7 |Liegt 2x im Space |
+|Raspberry Pi Kochbuch |Simon Monk |978-3-95561-638-0 |Liegt im Space |
+|Reguläre Ausdrücke |Tony Stubblebine |978-3-89721-535-1 |Liegt im Space |
+|Retrospektiven kurz & gut |Rolf Drähter |978-3-95561-800-1 |Reserviert zur Rezension für Markus Ernst |
+|Robot Builder's Bonanza 4th Edition |Gordon McComb |978-0-07-175036-3 |Liegt im Space |
+|Röhren-Projekte von 6 bis 60V|Burkhard Kainka|978-3-89576-142-3|Liegt im Space|
+|Routineaufgaben mit Python automatisieren|Al Sweigart|978-3-86490-353-3|hat trailblazr zur Rezension|
+|Schaltregler und Schaltnetzteile entwickeln|Nothart Rohde|978-3-645-65002-1|Liegt im Space|
+|Schaltungssammlung Mess- und Prüftechnik |Frank Sichla |978-3-7723-4086-4 |Liegt im Space (Leihgabe von Tobi?) |
+|SciPy and Numpy |Eli Bressert |978-1-449-30546 |Liegt im Space |
+|Signalverarbeitung & Messdatenerfassung |Lukas Salzburger |978-3-645-65079-3 |Liegt im Space (Leihgabe von Tobi?) |
+|Software Defined Radio – Schaltungen, Software und Empfangspraxis|Burkhard Kainka|978-3-89576-192-8|Liegt im Space|
+|Steam Punk - kurz & geek |Alex Jahnke & Marcus Rauchfuß |978-3-86899-367-7 |Liegt im Space |
+|Technisches Taschenbuch |Schaeffler Technologies |- |Liegt im Space |
+|The Makerspace Workbench - Tools, Technologies, and Techniques for Making |Adam Kemp |978-1-449-35567-8 |Liegt im Space |
+|Traumpfade |Bruce Chatwin |- |Liegt im Space |
+|Understanding, Building, and Using Baluns and Ununs|Jerry Sevick|0-943016-24-X|Liegt im Space|
+|vi und Vim kurz & gut |Arnold Robbins |978-3-89721-321-0 |1x ausgeliehen von Daniel, liegt 2x im Space |
+|Vim in der Praxis |Drew Neil |978-3-95561-578-9 |Liegt 2x im Space |
+|Webtypografie |Jason Santa Maria |978-3-86490-276-5 |Liegt im Space |
+|Weekend Projects for the Radio Amateur|George Brown|978-1-905-08641-2|Liegt im Space|
+|Weniger schlecht programmieren |Kathrin Passig,Johannes Jander |978-3-89721-567-2 |1x ausgeliehen von Christina; 1x ausgeliehen von Raketenolli (Stand 24.11.15); 1x liegt im Space (Stand 24.11.15); Liegt auch als [[:sonstiges:buchrezensionen:ebooks:start|E-Books]] vor 
+|Wireless Sensor Networks |Robert Faludi |978-0-596-80773-3 |Liegt im Space |

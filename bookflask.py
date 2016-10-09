@@ -1,6 +1,6 @@
 from database import db_session, init_db
 from models import Book, BookJSONEnconder
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template, send_from_directory
 from flask_cors import CORS, cross_origin
 
 init_db()
@@ -15,9 +15,14 @@ app.json_encoder = BookJSONEnconder
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return render_template("booklist.html")
+    # return 'Hello, World!'
 
-@app.route('/books')
+@app.route('/js/<path:path>')
+def send_js(path):
+    return send_from_directory('static/js', path)
+
+@app.route('/books/list')
 @cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
 def list_books():
     return jsonify(Book.query.all())
