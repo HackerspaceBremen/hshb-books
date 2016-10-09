@@ -7,15 +7,23 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.2.1/css/buttons.dataTables.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.2.0/css/select.dataTables.min.css">
-        <!-- <link rel="stylesheet" type="text/css" href="https://editor.datatables.net/extensions/Editor/css/editor.dataTables.min.css"> -->
+        <style>
+            label, input { display:block; }
+            input.text { margin-bottom:12px; width:95%; padding: .4em; }
+            fieldset { padding:0; border:0; margin-top:25px; }
+            h1 { font-size: 1.2em; margin: .6em 0; }
+            div#users-contain { width: 350px; margin: 20px 0; }
+            div#users-contain table { margin: 1em 0; border-collapse: collapse; width: 100%; }
+            div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
+            .ui-dialog .ui-state-error { padding: .3em; }
+            .validateTips { border: 1px solid transparent; padding: 0.3em; }
+        </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <!-- <script type="text/javascript" language="javascript" src="https://cdn.jsdelivr.net/jquery.jeditable/1.7.3/jquery.jeditable.js"></script> -->
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
         <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.2.1/js/dataTables.buttons.min.js"></script>
         <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/select/1.2.0/js/dataTables.select.min.js"></script>
         <script type="text/javascript" charset="utf8" src="js/dataTables.cellEdit.js"></script>
-        <!-- <script type="text/javascript" language="javascript" src="https://editor.datatables.net/extensions/Editor/js/dataTables.editor.min.js"></script> -->
         <script>
             $(document).ready(function(){
                 //$("selector").hide();
@@ -58,16 +66,87 @@
                 //make editable
 
                 theTable.MakeCellsEditable({
-                    "onUpdate": myCallbackFunction,
+                    "onUpdate": cellEditCallbackFunction,
                     "confirmationButton": { 
                         "confirmCss": 'my-confirm-class',
                         "cancelCss": 'my-cancel-class'
                     },
                     "columns": [3],
                 });
+
+                var dialog, form,
+                    title = $( "#title" ),
+                    author = $( "#author" ),
+                    isbn = $( "#isbn" ),
+                    status = $( "#status" ),
+                    allFields = $( [] ).add( title ).add( author ).add( isbn ).add( status ),
+                    tips = $( ".validateTips" );
+
+                function updateTips( t ) {
+                    tips
+                    .text( t )
+                    .addClass( "ui-state-highlight" );
+                    setTimeout(function() {
+                        tips.removeClass( "ui-state-highlight", 1500 );
+                    }, 500 );
+                }
+
+                function checkLength( o, n, min, max ) {
+                    if ( o.val().length > max || o.val().length < min ) {
+                        o.addClass( "ui-state-error" );
+                        updateTips( n + " muss zwischen " +
+                                   min + " und " + max + "Zeichen lang sein." );
+                        return false;
+                    } else {
+                        return true;
+                    }
+                }
+
+                function addUser() {
+                    var valid = true;
+                    allFields.removeClass( "ui-state-error" );
+
+                    valid = valid && checkLength( title, "Buchtitel", 1, 120 );
+                    valid = valid && checkLength( author, "Autor", 1, 120 );
+                    valid = valid && checkLength( isbn, "ISBN", 1, 20 );
+                    valid = valid && checkLength( status, "Bemerkung", 1, 120 );
+
+                    if ( valid ) {
+                        console.log("adding...");
+                        $.post("books/add", dialog.find( "form" ).serialize());
+                        dialog.dialog( "close" );
+                    }
+                    return valid;
+                }
+
+                dialog = $( "#dialog-form" ).dialog({
+                    autoOpen: false,
+                    height: 400,
+                    width: 350,
+                    modal: true,
+                    buttons: {
+                        "Buch eintragen": addUser,
+                        "Abbrechen": function() {
+                            dialog.dialog( "close" );
+                        }
+                    },
+                    close: function() {
+                        form[ 0 ].reset();
+                        allFields.removeClass( "ui-state-error" );
+                    }
+                });
+
+                form = dialog.find( "form" ).on( "submit", function( event ) {
+                    event.preventDefault();
+                    addUser();
+                });
+
+                $( "#create-book" ).button().on( "click", function() {
+                    dialog.dialog( "open" );
+                });
             });
 
-            function myCallbackFunction (updatedCell, updatedRow, oldValue) {
+            function cellEditCallbackFunction (updatedCell, updatedRow, oldValue) {
                 console.log("The new value for the cell is: " + updatedCell.data());
                 console.log("The values for each cell in that row are: " + updatedRow.data());
                 $.post( "http://127.0.0.1:5000/books/edit", updatedRow.data() );
@@ -76,15 +155,37 @@
         </script>
     </head>
     <body>
-        <table id="booktable">
-            <thead>
-                <tr>
-                    <th>Buchtitel</th>
-                    <th>Autor</th>
-                    <th>ISBN</th>
-                    <th>Bemerkung</th>
-                </tr>
-            </thead>
-        </table>
+        <div id="dialog-form" title="Neues Buch eintragen">
+            <p class="validateTips">Alle Felder müssen ausgefüllt werden.</p>
+
+            <form>
+                <fieldset>
+                    <label for="title">Buchtitel</label>
+                    <input type="text" name="title" id="title" value="" class="text ui-widget-content ui-corner-all">
+                    <label for="author">Autor</label>
+                    <input type="text" name="author" id="author" value="" class="text ui-widget-content ui-corner-all">
+                    <label for="isbn">ISBN</label>
+                    <input type="text" name="isbn" id="isbn" value="" class="text ui-widget-content ui-corner-all">
+                    <label for="status">Bemerkung</label>
+                    <input type="text" name="status" id="status" value="" class="text ui-widget-content ui-corner-all">
+
+                    <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                    <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+                </fieldset>
+            </form>
+        </div>
+        <button id="create-book">Buch eintragen</button>
+        <div class="ui-widget">
+            <table id="booktable" class="ui-widget ui-widget-content">
+                <thead>
+                    <tr class="ui-widget-header ">
+                        <th>Buchtitel</th>
+                        <th>Autor</th>
+                        <th>ISBN</th>
+                        <th>Bemerkung</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
     </body>
 </html>
